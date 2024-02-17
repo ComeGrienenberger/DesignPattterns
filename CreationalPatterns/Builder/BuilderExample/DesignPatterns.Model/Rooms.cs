@@ -37,7 +37,7 @@
 
         public override string ToString()
         {
-            return base.ToString();
+            return "Number of cabins : " + ContainedRooms.Count() + " and capacity  :" + GetTotalCapacity();
         }
     }
 }

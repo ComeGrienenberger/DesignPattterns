@@ -19,5 +19,10 @@
         {
             Space = space;
         }
+
+        public override string ToString()
+        {
+            return "Available space : " + Space;
+        }
     }
 }

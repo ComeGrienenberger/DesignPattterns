@@ -22,6 +22,16 @@ namespace BuilderExample.Builders
         }
 
         /// <summary>
+        /// Method to set the ship's name.
+        /// </summary>
+        /// <param name="name"> Name</param>
+        public void BuildName(string name)
+        {
+            workInProgress.SetName(name);
+        }
+
+
+        /// <summary>
         /// Method to build the ship's rooms.
         /// </summary>
         public abstract void BuildRooms();

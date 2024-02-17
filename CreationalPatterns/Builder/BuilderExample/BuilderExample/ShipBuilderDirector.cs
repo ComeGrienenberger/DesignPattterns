@@ -17,10 +17,11 @@ namespace BuilderExample
         /// Builds the ship for a given shipType.
         /// </summary>
         /// <param name="shipType"> The ship type to build. </param>
-        public void BuildShip(ShipType shipType)
+        public void BuildShip(ShipType shipType, string name)
         {
             SetBuilder(shipType);
 
+            shipBuilder.BuildName(name);
             shipBuilder.BuildEngine();
             shipBuilder.BuildRooms();
             shipBuilder.BuildShipmentSpace();

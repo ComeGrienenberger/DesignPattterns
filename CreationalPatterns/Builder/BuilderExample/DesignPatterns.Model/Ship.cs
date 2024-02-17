@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns.Model
+﻿using System.Text;
+
+namespace DesignPatterns.Model
 {
     /// <summary>
     /// Ship representation.
@@ -28,7 +30,7 @@
 
         public bool SetName(string name)
         {
-            if (String.IsNullOrWhiteSpace(Name))
+            if (String.IsNullOrWhiteSpace(name))
             {
                 return false;
             }
@@ -86,5 +88,20 @@
             return true;
         }
         #endregion
+
+        public override string ToString()
+        {
+            StringBuilder builder = new StringBuilder();
+
+            builder.AppendLine(GetName() + ":");
+
+            builder.AppendLine(GetShipmentSpace().ToString());
+
+            builder.AppendLine(GetRooms().ToString());
+
+            builder.AppendLine(GetEngine().ToString());
+
+            return builder.ToString();
+        }
     }
 }

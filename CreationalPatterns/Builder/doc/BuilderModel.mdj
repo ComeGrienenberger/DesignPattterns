@@ -1151,24 +1151,6 @@
 											"height": 13,
 											"text": "+Capacity: int",
 											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLAttributeView",
-											"_id": "AAAAAAGNs2Uvl6w6MCU=",
-											"_parent": {
-												"$ref": "AAAAAAGNs2BRiJ/S/3A="
-											},
-											"model": {
-												"$ref": "AAAAAAGNs2Uvfaw3ILQ="
-											},
-											"fillColor": "#ffebd8",
-											"font": "Arial;13;0",
-											"left": 829,
-											"top": 1013,
-											"width": 121.76708984375,
-											"height": 13,
-											"text": "+NbStackedBeds: int",
-											"horizontalAlignment": 0
 										}
 									],
 									"fillColor": "#ffebd8",
@@ -1176,7 +1158,7 @@
 									"left": 824,
 									"top": 993,
 									"width": 131.76708984375,
-									"height": 38
+									"height": 23
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -1187,12 +1169,50 @@
 									"model": {
 										"$ref": "AAAAAAGNs2BRiJ/KdJ0="
 									},
+									"subViews": [
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGNtiCggl+aW88=",
+											"_parent": {
+												"$ref": "AAAAAAGNs2BRiJ/TKQw="
+											},
+											"model": {
+												"$ref": "AAAAAAGNtiCgVV+XNzw="
+											},
+											"fillColor": "#ffebd8",
+											"font": "Arial;13;0",
+											"left": 829,
+											"top": 1021,
+											"width": 121.76708984375,
+											"height": 13,
+											"text": "+HasShower(): bool",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGNtiDODWAhhz8=",
+											"_parent": {
+												"$ref": "AAAAAAGNs2BRiJ/TKQw="
+											},
+											"model": {
+												"$ref": "AAAAAAGNtiDN82AeMGU="
+											},
+											"fillColor": "#ffebd8",
+											"font": "Arial;13;0",
+											"left": 829,
+											"top": 1036,
+											"width": 121.76708984375,
+											"height": 13,
+											"text": "+HasDesk(): bool",
+											"horizontalAlignment": 0
+										}
+									],
 									"fillColor": "#ffebd8",
 									"font": "Arial;13;0",
 									"left": 824,
-									"top": 1031,
+									"top": 1016,
 									"width": 131.76708984375,
-									"height": 10
+									"height": 38
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -1235,7 +1255,7 @@
 							"left": 824,
 							"top": 968,
 							"width": 131.76708984375,
-							"height": 73,
+							"height": 86,
 							"nameCompartment": {
 								"$ref": "AAAAAAGNs2BRiJ/NDcU="
 							},
@@ -2164,7 +2184,7 @@
 							"tail": {
 								"$ref": "AAAAAAGNs2QgHKnMnYA="
 							},
-							"points": "729:1136;729:1080;888:1080;888:1040",
+							"points": "729:1136;729:1080;888:1080;888:1053",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGNs2SJwqrOQps="
@@ -2198,7 +2218,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 873,
-									"top": 1081,
+									"top": 1087,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -2219,7 +2239,7 @@
 									"visible": null,
 									"font": "Arial;13;0",
 									"left": 858,
-									"top": 1081,
+									"top": 1087,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -2240,7 +2260,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 902,
-									"top": 1082,
+									"top": 1088,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -2257,7 +2277,7 @@
 							"tail": {
 								"$ref": "AAAAAAGNs2Q/1aoVdg8="
 							},
-							"points": "888:1136;888:1040",
+							"points": "888:1136;888:1053",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGNs2SMAqro/oE="
@@ -2350,7 +2370,7 @@
 							"tail": {
 								"$ref": "AAAAAAGNs2Ra5KpkoLI="
 							},
-							"points": "1056:1136;1056:1080;888:1080;888:1040",
+							"points": "1056:1136;1056:1080;888:1080;888:1053",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGNs2SOlKsCIO0="
@@ -6527,15 +6547,46 @@
 							},
 							"name": "Capacity",
 							"type": "int"
-						},
+						}
+					],
+					"operations": [
 						{
-							"_type": "UMLAttribute",
-							"_id": "AAAAAAGNs2Uvfaw3ILQ=",
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGNtiCgVV+XNzw=",
 							"_parent": {
 								"$ref": "AAAAAAGNs2BRiJ/KdJ0="
 							},
-							"name": "NbStackedBeds",
-							"type": "int"
+							"name": "HasShower",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGNtiDEiF/U7nY=",
+									"_parent": {
+										"$ref": "AAAAAAGNtiCgVV+XNzw="
+									},
+									"type": "bool",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGNtiDN82AeMGU=",
+							"_parent": {
+								"$ref": "AAAAAAGNs2BRiJ/KdJ0="
+							},
+							"name": "HasDesk",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGNtiDhXWBbvgk=",
+									"_parent": {
+										"$ref": "AAAAAAGNtiDN82AeMGU="
+									},
+									"type": "bool",
+									"direction": "return"
+								}
+							]
 						}
 					],
 					"isAbstract": true
